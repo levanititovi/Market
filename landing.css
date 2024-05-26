@@ -1,0 +1,678 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(249,246,238);
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    direction: none;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.name-nav{
+    color: black;
+}
+.name-nav:hover{
+    color: gold;
+}
+
+.name1-nav{
+    color: gold;
+}
+.container1{
+    width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+   margin-top: 50px;
+}
+.inner-container1{
+    width: 550px;
+    height: 600px;
+   border-radius: 40px;
+   position: relative;
+   background-color: #99e54d;
+   box-shadow: 2px 2px 8px grey;
+   padding: 20px;
+   transition: 0.3s ease;
+}
+.inner-container1:hover{
+    scale: 1.01;
+}
+
+.circle-container1{
+    position: absolute;
+    top:-50px;
+    right: 40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    box-shadow: 1px 1px 8px grey;
+    transition: 0.3s ease;
+}
+.circle-container1:hover{
+    scale: 1.05;
+    animation: rotate 2s  ;
+    transition: 0.3s ease;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+    cursor:pointer;
+}
+@keyframes rotate {
+    0%{
+        transform: rotateZ(0deg);
+    }
+   
+    
+    
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
+}
+.procent-container1{
+    margin-top: 30px;
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.title-circle-container1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.header-container1{
+    margin-top: 150px;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.big-text-container1{
+    font-size: 70px;
+    color: white;
+    font-weight: bolder;
+}
+
+.picer-container1{
+    background-image: url(assets/pexels-photo-3850972.jpeg);
+    width: 550px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 2px 2px 8px grey;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.picer-container1:hover{
+    scale: 1.01;
+}
+.btn-container1{
+    direction: none;
+    border: none;
+    margin-top: 50px;
+    width: 180px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 35px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.btn-container1:hover{
+    background-color: white;
+    color: black;
+    
+}
+            /* container2 */
+
+.container2{
+    width: 100%;
+    height: 160vh;
+    margin-top: 30px;
+}
+.header-container2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+
+}
+.boxer-container2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    gap: 50px;
+}
+.box-container2{
+    width: 350px;
+    height: 430px;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 35px;
+    background-color: white;
+    padding: 20px;
+    
+}
+.fix-picer-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picer-box-container2{
+    background-image: url(assets/delicious-pizza-isolated-white.jpg);
+    width: 320px;
+    height: 300px;
+    border-radius: 35px;
+    background-position: center;
+    background-size: cover;
+}
+.name-box-container2{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.fix-btn-container2{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    margin-top: 35px;
+}
+.btn-box-container2{
+    cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: black;
+  border: 2px solid #82f113;
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.btn-box-container2::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #99e54d;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+
+  .btn-box-container2:hover::before {
+    scale: 3;
+  }
+  .btn-box-container2:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  .btn-box-container2:active {
+    scale: 1;
+  }
+
+
+.btn-box-container2:hover{
+    background-color: #82f113;
+
+}
+
+.picer2-box-container2{
+    background-image: url(assets/high-angle-shot-vegetable-salad-white-bowl.jpg);
+    width: 320px;
+    height: 300px;
+    border-radius: 35px;
+    background-position: center;
+    background-size: cover;
+}
+
+.picer3-box-container2{
+    background-image: url(assets/pexels-photo-3681641.jpeg);
+    width: 320px;
+    height: 300px;
+    border-radius: 35px;
+    background-position: center;
+    background-size: cover;
+}
+.picer4-box-container2{
+    background-image: url(assets/pexels-photo-3939602.jpeg);
+    width: 320px;
+    height: 300px;
+    border-radius: 35px;
+    background-position: center;
+    background-size: cover;
+}
+
+.container3{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    color: white;
+
+}
+
+.header-container3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    padding-top: 70px;
+}
+
+.title-container3{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.contact-container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 40px;
+    gap: 20px;
+}
+.fa-phone-volume{
+    color: #99e54d;
+    cursor: pointer;
+}
+
+.number-container3:hover{
+    color: #99e54d;
+    cursor: pointer;
+}
+
+              /* container4 */
+.container4{
+    width: 100%;
+    height: 170vh;
+    margin-top: 50px;
+}
+.boxer-container4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.picer-container4{
+    background-image: url(assets/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg);
+    width: 550px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+}
+
+.box-container4{
+    width: 550px;
+    height: 550px;
+    background-color: #99e54d;
+    margin-bottom: 50px;
+    border-radius: 35px;
+}
+.name-container4{
+    text-align: center;
+    margin-top: 130px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+.header-container4{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.fix-btn-container4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  margin-top: 70px;
+}
+
+
+
+
+.btn-container4{
+    cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 34px;
+  background-color: black;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.320, 1);
+  overflow: hidden;
+  color: white;
+}
+.btn-container4::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #99e54d;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.320, 1);
+  }
+
+  .btn-container4:hover::before {
+    scale: 3;
+  }
+  .btn-container4:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  .btn-container4:active {
+    scale: 1;
+  }
+
+
+  .btn-container4:hover{
+    background-color: #000000;
+
+}
+
+.box1-container4{
+    width: 550px;
+    height: 550px;
+    background-color: #000000;
+    margin-bottom: 50px;
+    border-radius: 35px;
+    color: white;
+}
+
+.picer1-container4{
+    background-image: url(assets/mixed-salad-fresh-vegetables-with-pieces-salmon.jpg);
+    width: 550px;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+}
+
+
+/*container5*/
+
+.container5{
+    width: 100%;
+    height: 170vh;
+}
+
+.header-container5{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.boxes-container5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+.pic-box-container5{
+    background-image: none;
+    width: 350px;
+    height: 430px;
+    border-radius: 35px;
+    background-size: cover;
+    background-position: center;
+    transition: 1.5s ease;
+    margin-top: -20px;
+
+}
+.pic-box-container5:hover{
+    background-image: url(assets/delicious-pizza-isolated-white.jpg);
+    
+}
+.box-container5{
+    width: 350px;
+    height: 430px;
+    box-shadow: 2px 2px 8px grey;
+    border-radius: 35px;
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+.header-box-container5{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.titile-box-container5{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 170px;
+    margin-bottom: 50px;
+}
+
+.pic2-box-container5{
+    background-image: none;
+    width: 350px;
+    height: 430px;
+    border-radius: 35px;
+    background-size: cover;
+    background-position: center;
+    transition: 1.5s ease;
+    margin-top: -20px;
+
+}
+.pic2-box-container5:hover{
+    background-image: url(assets/dietary-menu-healthy-vegan-salad-vegetables-broccoli-mushrooms-spinach-quinoa-bowl-flat-lay-top-view.jpg);
+    
+}
+
+.pic3-box-container5{
+    background-image: none;
+    width: 350px;
+    height: 430px;
+    border-radius: 35px;
+    background-size: cover;
+    background-position: center;
+    transition: 1.5s ease;
+    margin-top: -20px;
+
+}
+.pic3-box-container5:hover{
+    background-image: url(assets/mixed-salad-fresh-vegetables-with-pieces-salmon.jpg);
+    
+}
+
+.pic4-box-container5{
+    background-image: none;
+    width: 350px;
+    height: 430px;
+    border-radius: 35px;
+    background-size: cover;
+    background-position: center;
+    transition: 1.5s ease;
+    margin-top: -20px;
+
+}
+.pic4-box-container5:hover{
+    background-image: url(assets/high-angle-shot-vegetable-salad-white-bowl.jpg);
+    color: rgb(0, 0, 0);
+    
+}
+.container6{
+    width: 100%;
+    height: 40vh;
+    background-color: #99e54d;
+
+}
+.header-container6{
+    text-align: center;
+    padding: 40px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
+.small-text-container6{
+    text-align: center;
+    font-size: 20px;
+}
+.inputs-container6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+input{
+    width: 200px;
+    height: 40px;
+   padding-left: 30px;
+   padding: 0 10px;
+   border-radius: 35px;
+   border: none;
+}
+
+.btn-container6{
+    cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: black;
+  border: 2px solid #ffffff;
+  border-radius: 34px;
+  background-color: black;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.320, 1);
+  overflow: hidden;
+  color: white;
+}
+.btn-container6::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #99e54d;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.320, 1);
+  }
+
+  .btn-container6:hover::before {
+    scale: 3;
+  }
+  .btn-container6:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+  }
+  .btn-container6:active {
+    scale: 1;
+  }
+
+
+  .btn-container6:hover{
+    background-color: #000000;
+
+}
+
+.container7{
+    width: 100%;
+    height: 200vh;
+    margin-top: 50px;
+}
+.boxes-container7,.boxers-container7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.box1-container7{
+    width: 550px;
+    height: 550px;
+    background-color: #000000;
+    
+    border-radius: 35px;
+    color: white;
+}
+
+.box-iconer-container7{
+    width: 550px;
+    height: 600px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 35px;
+    color: white;
+}
+
+.inner-container7{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.iconer-container7{
+    font-size: 50px;
+    margin-left: 30px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+.iconer-container7:hover{
+    color: #99e54d;
+}
+
+.texter-container7{
+    margin-top: 50px;
+    font-size: 20px;
+
+}
+.mail-container7{
+    color: #99e54d;
+    font-size: 21px;
+}
+
+
+
